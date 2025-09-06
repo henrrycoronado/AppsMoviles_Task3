@@ -1,12 +1,22 @@
 val nombreMateria: String = "Aplicaciones Moviles"
-
+//commit 5
+//salida esperada: 
+//Con parametros: "Henrry", "Bienvenido" -> "Bienvenido, Henrry"
+//Sin parametros: "", "" -> "Hola, Invitado"
+//Con parametros: "Henrry", "" -> "Hola, Henrry"
+//Con parametros: "", "Bienvenido" -> "Bienvenido, Invitado"
 fun Saludar(nombre: String, saludo: String) {
     val saludoValidado: String = if (saludo.isNotEmpty()) saludo else "Hola"
     val nombreValidado: String = if (nombre.isNotEmpty()) nombre else "Invitado"
     println("$saludoValidado, $nombreValidado")
     println("Materia: $nombreMateria")
 }
-
+//commit 5
+//salida esperada:
+//Con parametro: 1 -> "Mi genero es: Masculino"
+//Con parametro: 2 -> "Mi genero es: Femenino"
+//Con parametro: 3 -> "Mi genero es: Otro genero"
+//Con parametro: A -> "Mi genero es: Otro genero"
 fun Genero(genero: Int){
     print("Mi genero es: ")
     when (genero) {
